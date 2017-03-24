@@ -25,30 +25,41 @@ developing GNU and promoting software freedom." -->
 <meta name="ICBM" content="42.256233,-71.006581">
 <meta name="DC.title" content="gnu.org">
 
-<title>GNU Emacs Manual</title>
-
+<!--<title>GNU Emacs Manual</title>-->
+<title>GNU Emacs 用户手册</title>
 <style type="text/css">
-@import url('/software/emacs/manual.css');
+@import url('http://www.gnu.org/software/emacs/manual.css');
 </style>
 </head>
 
-<body lang="en">
-<div id="content" class="inner">
+<body lang="zh">
+<div id="content" class="inner"> 
 
-<h1 class="top">The Emacs Editor</h1>
-
+<!-- <h1 class="top">The Emacs Editor</h1> -->
+<h1 class="top">Emacs简介</h1>
+<!--
 <p>Emacs is the extensible, customizable, self-documenting real-time
 display editor.  This manual describes how to edit with Emacs and
 some of the ways to customize it; it corresponds to GNU Emacs version
 25.1.
 </p>
-The homepage for GNU Emacs is at
+-->
+<p>Emacs 是一款可扩展，可定制, 自动编码的实时回显的编辑器软件。
+  本手册描述了如何使用Emacs编辑和一些定制方法。本文档对应GNU Emacs 25.1版本.
+</p>
+<!--The homepage for GNU Emacs is at
 <a href="/software/emacs/">http://www.gnu.org/software/emacs/</a>.<br>
 To view this manual in other formats, click
 <a href="/software/emacs/manual/emacs-formats.html">here</a>.<br>
 You can also purchase a printed copy from the
 <a href="http://shop.fsf.org/product/emacs-manual/">FSF store</a>.
-
+-->
+GNU Emacs主页
+<a href="http://www.gnu.org/software/emacs/">http://www.gnu.org/software/emacs/</a>。<br>
+查看本手册的其他格式，点击
+<a href="http://www.gnu.org/software/emacs/manual/emacs-formats.html">这里</a>。<br>
+你也可以从
+<a href="http://shop.fsf.org/product/emacs-manual/">FSF store</a>购买本手册的打印版（英文）。
 
 <p>For information on extending Emacs, see <a href="http://www.gnu.org/software/emacs/manual/html_mono/elisp.html#Top">Emacs Lisp</a> in <cite>The
 Emacs Lisp Reference Manual</cite>.
@@ -75,33 +86,33 @@ developing GNU and promoting software freedom.&rdquo;
 
 
 <table class="menu" style="float:left" width="100%">
-<tr><td bgcolor="white"><a href="#Distrib" accesskey="1">Distrib</a></td>
+<tr><td bgcolor="white"><a href="#Distrib" accesskey="1">分发</a></td>
 <td>How to get the latest Emacs distribution.
 </td></tr>
-<tr><td bgcolor="white"><a href="#Intro" accesskey="2">Intro</a></td>
+<tr><td bgcolor="white"><a href="#Intro" accesskey="2">简介</a></td>
 <td>An introduction to Emacs concepts.
 </td></tr>
 <tr><th colspan="2" align="left" style="text-align:left">
 Important General Concepts
 </th></tr>
-<tr><td bgcolor="white"><a href="#Screen" accesskey="3">Screen</a></td>
+<tr><td bgcolor="white"><a href="#Screen" accesskey="3">屏幕</a></td>
 <td>How to interpret what you see on the screen.
 </td></tr>
-<tr><td bgcolor="white"><a href="#User-Input" accesskey="4">User Input</a></td>
+<tr><td bgcolor="white"><a href="#User-Input" accesskey="4">用户输入</a></td>
 <td>Kinds of input events (characters, buttons,
                           function keys).
 </td></tr>
-<tr><td bgcolor="white"><a href="#Keys" accesskey="5">Keys</a></td>
+<tr><td bgcolor="white"><a href="#Keys" accesskey="5">按键</a></td>
 <td>Key sequences: what you type to request one
                           editing action.
 </td></tr>
-<tr><td bgcolor="white"><a href="#Commands" accesskey="6">Commands</a></td>
+<tr><td bgcolor="white"><a href="#Commands" accesskey="6">命令</a></td>
 <td>Named functions run by key sequences to do editing.
 </td></tr>
-<tr><td bgcolor="white"><a href="#Entering-Emacs" accesskey="7">Entering Emacs</a></td>
+<tr><td bgcolor="white"><a href="#Entering-Emacs" accesskey="7">启动Emacs</a></td>
 <td>Starting Emacs from the shell.
 </td></tr>
-<tr><td bgcolor="white"><a href="#Exiting" accesskey="8">Exiting</a></td>
+<tr><td bgcolor="white"><a href="#Exiting" accesskey="8">退出</a></td>
 <td>Stopping or killing Emacs.
 </td></tr>
 <tr><th colspan="2" align="left" style="text-align:left">
@@ -2680,13 +2691,15 @@ Emacs and MS-DOS
 
 
 
-<a name="Distrib"></a>
+
 <div class="header" style="background-color:#DDDDFF">
 <p>
 Next: <a href="#Intro" accesskey="n" rel="next">Intro</a>, Previous: <a href="#Top" accesskey="p" rel="prev">Top</a>, Up: <a href="#Top" accesskey="u" rel="up">Top</a> &nbsp; [<a href="#SEC_Contents" title="Table of contents" rel="contents">Contents</a>][<a href="#Key-Index" title="Index" rel="index">Index</a>]</p>
 </div>
+<a name="Distrib"></a>
 <a name="Distribution"></a>
-<h2 class="unnumbered">Distribution</h2>
+<!-- <h2 class="unnumbered">Distribution</h2> -->
+<h2 class="unnumbered">分发</h2>
 
 <p>GNU Emacs is <em>free software</em>; this means that everyone is free to
 use it and free to redistribute it under certain conditions.  GNU Emacs
@@ -2747,7 +2760,7 @@ USA
 Next: <a href="#Screen" accesskey="n" rel="next">Screen</a>, Previous: <a href="#Distrib" accesskey="p" rel="prev">Distrib</a>, Up: <a href="#Top" accesskey="u" rel="up">Top</a> &nbsp; [<a href="#SEC_Contents" title="Table of contents" rel="contents">Contents</a>][<a href="#Key-Index" title="Index" rel="index">Index</a>]</p>
 </div>
 <a name="Introduction"></a>
-<h2 class="unnumbered">Introduction</h2>
+<h2 class="unnumbered">前言</h2>
 
 <p>You are reading about GNU Emacs, the GNU incarnation of the
 advanced, self-documenting, customizable, extensible editor Emacs.
